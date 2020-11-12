@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSpot</title>
+    <link rel="icon" href="favicon.svg" >
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <div class="booksContainer">
+        <div class="booksContainer__input__container">
+            <img src="./images/logo.svg" class="" alt="logo image" />
+            <input class="booksContainer__input" onkeyup="getNewBookFromEntry(event)" type="text" placeholder="Enter a bookname. For ex: Java.">
+        </div>
+        <span class="wishListRoute">
+          <img src="./images/wishlist1.png" />
+        </span>
+        <div class="booksListContainer">
+          <p class="bookCount">Found <span id="bookCount"></span> Items</p>
+          <ul  class="booksContainer__list"  id="booksContainer__list">
+          </ul>
+        </div>
+        <span class="booksContainer__fav__header">My Reading Wishlist (<span id="currentFavs">0</span>)</span>
+        <ul class="booksContainer__fav__list" id="booksContainer__fav__list">
+        </ul>
+       
+    </div>
+    <!-- <footer>
+      Made on Vanilla JS and NodeJS
+    </footer> -->
+    <script src="./scripts/booksFetching.js"></script>
+</body>
+</html>
